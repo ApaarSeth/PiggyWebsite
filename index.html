@@ -78,7 +78,7 @@
     e.preventDefault();
     const email = this.querySelector('input[type="email"]').value;
     
-    fetch('https://piggy-waitlist.amoghmishra23.workers.dev', {
+    fetch('https://piggy-waitlist.amoghmishra23.workers.dev/', {
       method: 'POST',
       body: JSON.stringify({ email: email }),
       headers: { 'Content-Type': 'application/json' }
